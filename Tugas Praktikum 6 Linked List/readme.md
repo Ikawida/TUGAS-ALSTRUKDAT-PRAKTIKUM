@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 5 Linked List</h1>
+# <h1 align="center">Laporan Praktikum Modul 6 Linked List</h1>
 
 <p align="center">Nama: Ika Wida Nuragustin</p>
 <p align="center">NIM: 2311110001</p>
