@@ -393,7 +393,7 @@ Queue adalah struktur data yang mengatur elemen dalam urutan "first-in, first-ou
 
 Selain itu Queue juga dibedakan menjadi beberapa jenis yaitu pertama berdasarkan Implementasinya ada Linear/Simple Queue dan Circular Queue. Kedua ada berdasarkan Penggunaannya ada Priority Queue dan Double-ended Queue.
 
-Queue biasanya digunakan dalam berbagai aplikasi, seperti sistem antrian dan penjadwalan tugas dalam pemrograman.
+Queue memiliki peran yang penting dalam berbagai aplikasi dan algoritma. Salah satu fungsi utamanya adalah mengatur dan mengelola antrean tugas atau operasi secara efisien. Dalam sistem komputasi, ia digunakan untuk menangani tugas-tugas seperti penjadwalan proses, antrean pesan, dan manajemen sumber daya. Queue biasanya digunakan dalam berbagai aplikasi, seperti sistem antrian dan penjadwalan tugas dalam pemrograman.
 
 ## Daftar Pustaka
 
