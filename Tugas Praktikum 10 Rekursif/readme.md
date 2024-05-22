@@ -6,29 +6,69 @@
 
 ## Dasar Teori
 
-Rekursif adalah suatu proses atau prosedur dari fungsi yang memanggil dirinya sendiri secara berulang-ulang. Karena proses dalam Rekursif ini terjadi secara berulang-ulang maka harus ada kondisi yang membatasi pengulangan persebut, jika tidak maka proses tidak akan pernah berhenti sampai memori yang digunakan untuk menampung proses tersebut tidak dapat menampung lagi/penuh. Kelebihan Fungsi Rekursif adalah program menjadi lebih singkat. Pada beberapa kasus, lebih mudah menggunakan fungsi rekursif, contohnya: pangkat, factorial, dan fibonacci, dan beberapa proses deret lainnya [1]. Fungsi rekursif lebih efisien dan cepat dibandingkan proses secara iteratif. Kekurangan Fungsi Rekursif adalah memakan memori lebih besar, karena setiap bagian dari dirinya dipanggil, akan membutuhkan sejumlah ruang memori untuk penyimpanan. Rekursif sering kali tidak bisa berhenti sehingga memori akan terpakai habis dan program bisa hang. 
+Rekursif adalah suatu proses atau prosedur dari fungsi yang memanggil dirinya sendiri secara berulang-ulang. Karena proses dalam Rekursif ini terjadi secara berulang-ulang maka harus ada kondisi yang membatasi pengulangan persebut, jika tidak maka proses tidak akan pernah berhenti sampai memori yang digunakan untuk menampung proses tersebut tidak dapat menampung lagi/penuh. Kelebihan Fungsi Rekursif adalah program menjadi lebih singkat. Pada beberapa kasus, lebih mudah menggunakan fungsi rekursif, contohnya: pangkat, factorial, dan fibonacci, dan beberapa proses deret lainnya [1]. Fungsi rekursif lebih efisien dan cepat dibandingkan proses secara iteratif. Kekurangan Fungsi Rekursif adalah memakan memori lebih besar, karena setiap bagian dari dirinya dipanggil, akan membutuhkan sejumlah ruang memori untuk penyimpanan. Rekursif sering kali tidak bisa berhenti sehingga memori akan terpakai habis dan program bisa *hang*. 
 
 Rekursif berarti bahwa suatu proses bisa memanggil dirinya sendiri. Rekursif adalah kemampuan suatu rutin untuk memanggil dirinya sendiri. Dalam Rekursif sebenarnya terkandung pengertian prosedur dan fungsi. Perbedaannya adalah bahwa rekursif bisa memanggil ke dirinya sendiri, tetapi prosedur dan fungsi harus dipanggil lewat pemanggil prosedur dan fungsi [2].
 
-Rekursif dibedakan menjadi dua jenis, yaitu Rekursif Langsung dan Rekursif Tidak Langsung. Rekursif Langsung terjadi ketika suatu fungsi memanggil dirinya sendiri secara langsung, tanpa memanggil fungsi lain. Rekursif Tidak Langsung terjadi ketika suatu fungsi memanggil fungsi lain yang kemudian memanggil fungsi asli [3].
+Rekursif dibedakan menjadi dua jenis, yaitu Rekursif Langsung dan Rekursif Tidak Langsung. Rekursif Langsung terjadi ketika suatu fungsi memanggil dirinya sendiri secara langsung, tanpa memanggil fungsi lain. Rekursif Tidak Langsung terjadi ketika suatu fungsi memanggil fungsi lain yang kemudian memanggil fungsi asli.
 
 - Rekursif Langsung:
 
-Rekursif langsung terjadi ketika suatu fungsi memanggil dirinya sendiri secara langsung, tanpa memanggil fungsi lain. Dalam Rekursif langsung, fungsi memanggil dirinya sendiri dengan parameter yang berbeda, sehingga memungkinkan fungsi untuk memecahkan masalah yang kompleks dengan cara membaginya menjadi bagian yang lebih kecil dan lebih mudah dipahami.
+Rekursi langsung adalah fungsi yang memanggil dirinya sendiri secara langsung tanpa melalui fungsi lain. Dalam pengertian rekursi, fungsi rekursif memiliki kasus dasar yang dapat diselesaikan secara langsung dan kasus kompleks yang diuraikan menjadi kasus yang identik dengan ukuran lebih kecil. Analisis efisiensi waktu algoritma rekursif melibatkan penentuan persamaan rekursif untuk menghitung eksekusi operasi dasar berdasarkan ukuran masukan [3].
 
-Kelebihan Rekursif Langsung adalah program menjadi lebih singkat dan lebih mudah dipahami. Pada beberapa kasus, lebih mudah menggunakan fungsi rekursif langsung, seperti dalam contoh fungsi pangkat, faktorial, dan deret Fibbonacci [4].
+Kelebihan dan kekurangan rekursif langsung adalah sebagai berikut:
 
-Namun, Rekursif Langsung juga memiliki kekurangan. Kekurangan utama adalah memakan memori lebih besar, karena setiap bagian dari dirinya dipanggil, akan membutuhkan sejumlah ruang memori untuk penyimpanan. Rekursif Langsung sering kali tidak bisa berhenti sehingga memori akan terpakai habis dan program bisa hang.
+### Kelebihan Rekursi Langsung
+
+1. **Sangat mudah untuk melakukan perulangan dengan batasan yang luas**: Rekursi langsung memungkinkan perulangan dalam skala yang besar dan dapat menangani batasan yang luas tanpa memerlukan perulangan yang lebih kompleks.
+2. **Dapat melakukan perulangan dengan batasan fungsi**: Rekursi langsung memungkinkan perulangan yang dibatasi oleh fungsi, sehingga dapat menangani kompleksitas yang lebih tinggi dalam perulangan.
+
+### Kekurangan Rekursi Langsung
+
+1. **Tidak bisa melakukan nested loop atau looping bersarang**: Rekursi langsung tidak dapat melakukan perulangan yang lebih dalam, seperti nested loop, karena setiap fungsi memanggil dirinya sendiri dan tidak dapat melakukan perulangan yang lebih kompleks.
+2. **Biasanya membuat fungsi sulit untuk dipahami**: Rekursi langsung dapat membuat fungsi yang memanggil dirinya sendiri sulit untuk dipahami, terutama jika tidak ada batasan yang jelas untuk menghentikan perulangan.
+3. **Memerlukan stack yang lebih besar**: Rekursi langsung memerlukan stack yang lebih besar untuk menampung variabel lokal dan parameter formal setiap kali fungsi dipanggil, yang dapat menyebabkan stack overflow jika tidak dikelola dengan baik.
+4. **Proses agak berbelit-belit**: Rekursi langsung dapat membuat proses perulangan yang berbelit-belit karena terdapat pemanggilan fungsi yang berulang-ulang dan pemanggilan data yang ditumpuk.
+
+Rekursi langsung biasanya digunakan dalam pemrograman untuk menyelesaikan masalah yang dapat direduksi menjadi masalah serupa yang lebih kecil. Fungsi rekursif langsung memanggil dirinya sendiri secara langsung tanpa melalui fungsi lain, sehingga dapat menangani kompleksitas yang lebih tinggi dalam perulangan. Rekursi langsung juga dapat membuat kode menjadi lebih ringkas, elegan, dan simpel ketika digunakan dengan baik, namun perlu diingat untuk menghindari rekursi yang tak hingga (infinite recursion) yang dapat menyebabkan StackOverflowError [4].
 
 - Rekursif Tidak Langsung
 
-Dasar Teori Rekursif Tidak Langsung:
+Rekursi tidak langsung adalah fungsi yang memanggil fungsi lain yang kemudian memanggil fungsi rekursif, bukan fungsi itu sendiri. Dalam rekursi tidak langsung, fungsi rekursif tidak memanggil dirinya sendiri secara langsung, tetapi memanggil fungsi lain yang kemudian memanggil fungsi rekursif. Rekursi tidak langsung dapat digunakan untuk menyelesaikan masalah yang lebih kompleks yang tidak dapat diselesaikan dengan rekursi langsung, namun dapat lebih sulit untuk dipahami dan mengelola karena terdapat lebih banyak fungsi yang terlibat dalam proses rekursi [5].
 
-Rekursif tidak langsung terjadi ketika suatu fungsi memanggil fungsi lain yang kemudian memanggil fungsi asli. Dalam Rekursif tidak langsung, fungsi memanggil fungsi lain yang memiliki fungsi rekursif sendiri, sehingga memungkinkan fungsi untuk memecahkan masalah yang kompleks dengan cara membaginya menjadi bagian yang lebih kecil dan lebih mudah dipahami.
+Kelebihan fungsi rekursi:
 
-Kelebihan Rekursif Tidak Langsung adalah program menjadi lebih singkat dan lebih mudah dipahami. Pada beberapa kasus, lebih mudah menggunakan fungsi rekursif tidak langsung, seperti dalam contoh fungsi pangkat, faktorial, dan deret Fibbonacci [5].
+1. **Program lebih singkat**: Fungsi rekursif dapat membuat kode lebih ringkas dan efektif dalam menyelesaikan beberapa masalah, seperti perhitungan faktorial dan bilangan Fibonacci.
 
-Namun, Rekursif Tidak Langsung juga memiliki kekurangan. Kekurangan utama adalah memakan memori lebih besar, karena setiap bagian dari dirinya dipanggil, akan membutuhkan sejumlah ruang memori untuk penyimpanan. Rekursif Tidak Langsung sering kali tidak bisa berhenti sehingga memori akan terpakai habis dan program bisa hang.
+2. **Dapat melakukan perulangan dengan batasan yang luas**: Rekursi memungkinkan perulangan dalam skala yang besar dan dapat menangani batasan yang luas tanpa memerlukan perulangan yang lebih kompleks.
+
+3. **Dapat melakukan perulangan dengan batasan fungsi**: Fungsi rekursif dapat melakukan perulangan yang dibatasi oleh fungsi, sehingga dapat menangani kompleksitas yang lebih tinggi dalam perulangan.
+
+Kekurangan fungsi rekursi:
+
+1. **Memakan memori lebih besar**: Rekursi memerlukan stack yang lebih besar untuk menampung variabel lokal dan parameter formal setiap kali fungsi dipanggil, yang dapat menyebabkan stack overflow jika tidak dikelola dengan baik.
+
+2. **Tidak bisa melakukan nested loop atau looping bersarang**: Rekursi tidak dapat melakukan perulangan yang lebih dalam, seperti nested loop, karena setiap fungsi memanggil dirinya sendiri dan tidak dapat melakukan perulangan yang lebih kompleks.
+
+3. **Biasanya membuat fungsi sulit untuk dipahami**: Rekursi dapat membuat fungsi yang memanggil dirinya sendiri sulit untuk dipahami, terutama jika tidak ada batasan yang jelas untuk menghentikan perulangan.
+
+4. **Memerlukan stack yang lebih besar**: Rekursi memerlukan stack yang lebih besar untuk menampung variabel lokal dan parameter formal setiap kali fungsi dipanggil, yang dapat menyebabkan stack overflow jika tidak dikelola dengan baik.
+
+5. **Proses agak berbelit-belit**: Rekursi dapat membuat proses perulangan yang berbelit-belit karena terdapat pemanggilan fungsi yang berulang-ulang dan pemanggilan data yang ditumpuk.
+
+6. **Tidak cocok untuk semua kasus**: Rekursi hanya cocok untuk beberapa kasus tertentu dan tidak cocok untuk semua jenis permasalahan, sehingga perlu dipertimbangkan dengan hati-hati dalam penggunaannya.
+
+Rekursi tidak langsung biasanya digunakan dalam pemrograman untuk menyelesaikan masalah yang kompleks dan memerlukan interaksi antar fungsi yang lebih banyak. Rekursi tidak langsung dapat digunakan dalam berbagai aplikasi, seperti:
+
+1. **Algoritma traversal dalam struktur data**: Rekursi tidak langsung dapat digunakan untuk melakukan traversal dalam struktur data seperti binary tree, linked list, dan graph, untuk mencari nilai tertentu atau melakukan operasi lainnya.
+
+2. **Pemrosesan data dalam struktur data**: Rekursi tidak langsung dapat digunakan untuk melakukan operasi pemrosesan data dalam struktur data seperti sorting, searching, dan filtering, yang memerlukan interaksi antar fungsi yang lebih banyak.
+
+3. **Pemrograman logic dalam sistem**: Rekursi tidak langsung dapat digunakan dalam pemrograman logic dalam sistem, seperti dalam pengembangan sistem operasi, aplikasi web, dan aplikasi mobile, untuk menyelesaikan masalah yang kompleks dan memerlukan interaksi antar fungsi yang lebih banyak.
+
+4. **Pemrograman dalam domain spesifik**: Rekursi tidak langsung dapat digunakan dalam pemrograman dalam domain spesifik seperti pemrograman numerik, pemrograman grafis, dan pemrograman jaringan, untuk menyelesaikan masalah yang kompleks dan memerlukan interaksi antar fungsi yang lebih banyak.
+
+5. **Pemrograman dalam pengembangan AI**: Rekursi tidak langsung dapat digunakan dalam pengembangan AI, seperti dalam pengembangan sistem permainan, sistem peringatan, dan sistem keputusan, untuk menyelesaikan masalah yang kompleks dan memerlukan interaksi antar fungsi yang lebih banyak.
 
 ## Langkah Praktikum 
 
