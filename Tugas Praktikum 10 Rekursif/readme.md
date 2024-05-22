@@ -287,7 +287,7 @@ int main() {
 ![Screenshot 2024-05-22 043405](https://github.com/Ikawida/TUGAS-ALSTRUKDAT-PRAKTIKUM/assets/157208863/ba663cad-6e43-433f-8f02-fd84a3326acd)
 
 #### Interpretasi
-Berikut adalah interpretasi dari kode program tersebut:
+Berikut adalah interpretasi dari kode program yang digunakan:
 
 1. **Deklarasi Fungsi `faktorial`**:
    - Fungsi `faktorial` merupakan sebuah fungsi rekursif yang bertujuan untuk menghitung nilai faktorial dari sebuah bilangan bulat positif.
@@ -301,13 +301,6 @@ Berikut adalah interpretasi dari kode program tersebut:
    - Program memeriksa apakah input yang dimasukkan adalah bilangan bulat positif.
    - Jika input adalah bilangan bulat positif, program memanggil fungsi `faktorial` dengan parameter `num` untuk menghitung faktorialnya.
    - Hasil faktorial kemudian dicetak ke layar bersama dengan pesan yang menyertakan bilangan asli yang diinputkan.
-
-3. **Contoh Output**:
-   Jika pengguna memasukkan bilangan bulat positif 5, maka outputnya akan menjadi:
-   ```
-   Masukkan bilangan bulat positif: 5
-   Faktorial dari 5 adalah: 120
-   ```
 
 Alur Kerja Program:
 
@@ -397,9 +390,7 @@ int functionB(int n) {
 
 #### Interpretasi
 
-Berikut adalah penjelasan dari kode program yang digunakan:
-
-Pada program ini, terdapat dua fungsi yaitu `functionA` dan `functionB`, yang saling memanggil satu sama lain untuk menghitung faktorial dari sebuah bilangan bulat positif. Berikut adalah interpretasi dari kode program tersebut:
+Pada program ini, terdapat dua fungsi yaitu `functionA` dan `functionB`, yang saling memanggil satu sama lain untuk menghitung faktorial dari sebuah bilangan bulat positif. Berikut adalah penjelasan dari kode program yang digunakan:
 
 1. **Fungsi `functionA`**:
     - Fungsi ini menerima satu parameter integer `n` yang merupakan bilangan untuk dihitung faktorialnya.
